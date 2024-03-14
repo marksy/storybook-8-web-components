@@ -1,0 +1,92 @@
+{
+    "name": "storybook8test",
+    "version": "2.1.10",
+    "description": "Test Storybook 8 web components",
+    "license": "UNLICENSED",
+    "author": {
+        "name": "Mark Chambers"
+    },
+    "files": [
+        "dist",
+        "react.d.ts",
+        "react.js"
+    ],
+    "scripts": {
+        "start": "yarn bootstrap && npm-run-all --parallel stencil:watch storybook:dev",
+        "bootstrap": "yarn build:stencil-dev",
+        "build:stencil-dev": "stencil build",
+        "stencil:watch": "stencil build --watch",
+        "storybook:dev": "storybook dev"
+    },
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.js",
+    "es2015": "dist/esm/index.mjs",
+    "es2017": "dist/esm/index.mjs",
+    "types": "dist/types/index.d.ts",
+    "collection": "dist/collection/collection-manifest.json",
+    "collection:main": "dist/collection/index.js",
+    "unpkg": "dist/timely-ui/timely-ui.js",
+    "distDirs": {
+        "stencil": "dist"
+    },
+    "jest-junit": {
+        "outputDirectory": "coverage",
+        "outputName": "jest-junit.xml"
+    },
+    "dependencies": {
+        "@stencil/core": "^4.8.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.19.3",
+        "@babel/preset-env": "^7.22.9",
+        "@babel/preset-react": "^7.22.5",
+        "@babel/preset-typescript": "^7.22.5",
+        "@phenomnomnominal/tsquery": "^5.0.0",
+        "@stencil-community/eslint-plugin": "^0.7.1",
+        "@stencil/postcss": "^2.1.0",
+        "@stencil/react-output-target": "^0.5.3",
+        "@stencil/sass": "^3.0.7",
+        "@storybook/addon-essentials": "^8.0.0",
+        "@storybook/addon-links": "^8.0.0",
+        "@storybook/addon-webpack5-compiler-swc": "^1.0.2",
+        "@storybook/blocks": "^8.0.0",
+        "@storybook/manager-api": "^8.0.0",
+        "@storybook/theming": "^8.0.0",
+        "@storybook/web-components": "^8.0.0",
+        "@storybook/web-components-webpack5": "^8.0.0",
+        "@tokens-studio/sd-transforms": "^0.9.2",
+        "@types/fs-extra": "^9.0.13",
+        "@types/jest": "^29.5.8",
+        "@types/lodash-es": "^4.17.6",
+        "@types/node": "^18.17.3",
+        "@types/react": "^16.14.43",
+        "@types/react-dom": "^16.9.19",
+        "@typescript-eslint/eslint-plugin": "^6.11.0",
+        "@typescript-eslint/parser": "^6.11.0",
+        "babel-loader": "^8.2.3",
+        "concurrently": "^7.4.0",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-jsx-a11y": "^6.6.1",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.31.8",
+        "fs-extra": "^10.1.0",
+        "jest": "^29.7.0",
+        "jest-cli": "^29.7.0",
+        "jest-junit": "^14.0.1",
+        "lint-staged": "^13.0.3",
+        "lit": "^2.8.0",
+        "lodash": "^4.17.21",
+        "node-fetch": "^3.2.10",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^2.8.8",
+        "puppeteer": "^21.5.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "stencil-inline-svg": "^1.1.0",
+        "storybook": "^8.0.0",
+        "typescript": "^5.2.2"
+    },
+    "packageManager": "yarn@3.6.3"
+}

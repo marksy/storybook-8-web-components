@@ -1,0 +1,11 @@
+import { Canvas, Meta, Markdown } from '@storybook/blocks';
+import * as TuiTestStories from './tui-test.stories';
+import Readme from './readme.md?raw';
+
+<Meta of={TuiTestStories} />
+
+# TuiTest (MDX docs)
+
+<Canvas of={TuiTestStories.Default} />
+
+<Markdown>{Readme}</Markdown>

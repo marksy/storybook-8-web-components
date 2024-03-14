@@ -1,0 +1,11 @@
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+
+src/tokens/**/*
+src/components.d.ts
+src/components/**/readme.md
+src/generated.css
+*.generated.ts
+*.generated.tsx

@@ -1,0 +1,5 @@
+{
+    "src/**/*.{ts,tsx}": ["yarn prettier --write", "yarn eslint --quiet --ext .ts,.tsx"],
+    "src/**/*.css": ["yarn stylelint --allow-empty-input --fix"],
+    "src/**/components/**/*.tsx": ["yarn write-cloak-css"]
+}
